@@ -6,7 +6,7 @@ public class FrutosdoMarCongelados implements FrutoDoMar{
 
     @Override
     public String toString() {
-        return "Furtosdo Mar Congelados da baia Chesapeake";
+        return "Furtos do Mar Congelados da baia Chesapeake";
     }
     
 }

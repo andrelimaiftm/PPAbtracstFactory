@@ -13,8 +13,7 @@ public class NYPizzaStore extends PizzaStore{
     @Override
     protected Pizza criaPizza(String item) {
         Pizza pizza = null;
-        PizzaIngredientFactory ingredientFactory = 
-            new NYPizzaIngredientFactory();
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 
             if(item.equals("queijo")){
                 pizza = new QueijoPizza(ingredientFactory);
@@ -28,7 +27,7 @@ public class NYPizzaStore extends PizzaStore{
             }
             else if(item.equals("pepperoni")){
                 pizza = new PepperoniPizza(ingredientFactory);
-                pizza.setNome("Pizza de peperroni do mar no estilo de nova york");
+                pizza.setNome("Pizza de peperroni no estilo de nova york");
             }
         return pizza;
     }
